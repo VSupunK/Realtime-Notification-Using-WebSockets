@@ -5,7 +5,7 @@ const notifySchema = new Schema(
   {
     id: mongoose.Types.ObjectId,
     user: { type: mongoose.Types.ObjectId, ref: "user" },
-    receipients: [mongoose.Types.ObjectId],
+    recipients: [mongoose.Types.ObjectId],
     url: String,
     text: String,
     content: String,
